@@ -1,18 +1,15 @@
 import pandas as pd
 import pandasai
-print(pandasai.__version__)
-from pandasai.llm import AzureOpenAI, OpenAI
+from pandasai.llm import AzureOpenAI
 from pandasai import SmartDataframe
 
-# sample data
-# df = pd.DataFrame({
-#     "country": ["United States", "United Kingdom", "France", "Germany", "Italy", "Spain", "Canada", "Australia", "Japan", "China"],
-#     "gdp": [19294482071552, 2891615567872, 2411255037952, 3435817336832, 1745433788416, 1181205135360, 1607402389504, 1490967855104, 4380756541440, 14631844184064],
-#     "happiness_index": [6.94, 7.16, 6.66, 7.07, 6.38, 6.4, 7.23, 7.22, 5.87, 5.12]
-# })
+from flask import Flask, Response, jsonify, request
+import pandas as pd
+import json
 
-# df = pd.read_parquet("profiles/passenger_details/check_passenger.parquet")
-df = pd.read_parquet("summary.parquet")
+app = Flask(__name__)
+
+df = pd.read_excel("short.xlsx")
 
 llm = AzureOpenAI(
     api_version="2023-07-01-preview",
@@ -28,12 +25,42 @@ sdf = SmartDataframe(df, config={
                     "llm": llm,
                     "enable_cache": False,
                     "verbose": True,
-                    "enforce_privacy": False 
+                    "enforce_privacy": False,
+                    "conversational": True
                     }
 )
 
+@app.route('/askme', methods = ['GET'])
+def get_response():
+    
+    
+    prompt = request.args.get("prompt").split("_")
+    
+    new_str = ""
+    
+    for i in prompt:
+        new_str += i
+        new_str += "_"
+    
+    try:
+        response = sdf.chat(new_str)
+        
+        new_dict = {}
+        
+        new_dict["answer"] = response
+    
+        return jsonify(new_dict)
+    
+    except Exception:
+        
+        result = "Sorry , I was not able to find any relevant results"
+    
+        new_dict = {}
+        
+        new_dict["answer"] = result
+    
+        return jsonify(new_dict)
 
-response = sdf.chat("which country has the highest gdp?")
-print(response)
 
-# can you give me the date of birth for the passenger_hash = fd68e562482eef0d8941437ed7ee0e4e
+if __name__ =="__main__":
+    app.run(port=8080)
