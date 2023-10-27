@@ -6,7 +6,7 @@ from pandasai import SmartDataframe
 
 
 
-df = pd.read_excel("short.xlsx")
+df = pd.read_excel("data/short.xlsx")
 
 llm = AzureOpenAI(
     api_version="2023-07-01-preview",
@@ -16,6 +16,7 @@ llm = AzureOpenAI(
     is_chat_model=True
 )
 
+user_defined_path = "chart.png"
 
 
 sdf = SmartDataframe(df, config={
@@ -23,13 +24,15 @@ sdf = SmartDataframe(df, config={
                     "enable_cache": False,
                     "verbose": True,
                     "enforce_privacy": False,
-                    "conversational": True
+                    # "conversational": True ,
+                    "save_charts": True
+                    # "save_charts_path": user_defined_path
                     }
 )
 
 
-response = sdf.chat("give me the total revenue")
+response = sdf.chat("give me the points for a piechart for the revenue in years")
 
-print(response)
+# print(response)
         
 

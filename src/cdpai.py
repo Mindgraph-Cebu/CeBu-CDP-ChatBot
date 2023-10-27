@@ -9,7 +9,7 @@ import json
 
 app = Flask(__name__)
 
-df = pd.read_excel("short.xlsx")
+df = pd.read_csv("data/Invistico_Airline.csv")
 
 llm = AzureOpenAI(
     api_version="2023-07-01-preview",
