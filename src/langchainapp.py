@@ -8,11 +8,7 @@ from langchain.chat_models import AzureChatOpenAI
 import duckdb
 
 conn = duckdb.connect(database='test.db')
-conn.execute("INSTALL spatial;")
-conn.execute("LOAD spatial;")
-conn.execute(f"DROP TABLE IF EXISTS profile")
-conn.execute("CREATE TEMPORARY TABLE profile AS SELECT * FROM st_read('./passenger_Data.xlsx', layer='passenger_data')")
-conn.execute("INSTALL sqlite;")
+
 uri = "duckdb:///test.db"
 
 db = SQLDatabase.from_uri(uri,include_tables=['profile'])
