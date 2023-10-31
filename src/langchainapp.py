@@ -7,11 +7,11 @@ from langchain.llms import AzureOpenAI
 from langchain.chat_models import AzureChatOpenAI
 import duckdb
 
-conn = duckdb.connect(database='test.db')
 
-uri = "duckdb:///test.db"
+uri = "sqlite:///data.db"
 
-db = SQLDatabase.from_uri(uri,include_tables=['profile'])
+db = SQLDatabase.from_uri(uri)
+# ,include_tables=['profile']
 
 llm = AzureChatOpenAI(model="gpt-35-turbo",
                       openai_api_key="2dd4400d079a4fd49ddd2e864802522a",
