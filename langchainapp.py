@@ -13,7 +13,7 @@ import pandas as pd
 # conn = duckdb.connect(database='duckdb:///src/data.db')
 
 
-uri = "duckdb:///data/data.db"
+uri = "sqlite:///data.db"
 
 db = SQLDatabase.from_uri(uri)
 # ,include_tables=['profile']
