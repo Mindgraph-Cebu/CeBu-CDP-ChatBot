@@ -5,13 +5,20 @@ from langchain.agents import AgentExecutor
 from langchain.agents.agent_types import AgentType
 from langchain.llms import AzureOpenAI
 from langchain.chat_models import AzureChatOpenAI
+from langchain.agents import create_pandas_dataframe_agent
+from langchain.prompts import PromptTemplate
 import duckdb
+import pandas as pd
+
+# conn = duckdb.connect(database='duckdb:///src/data.db')
 
 
-uri = "sqlite:///data.db"
+uri = "duckdb:///data/data.db"
 
 db = SQLDatabase.from_uri(uri)
 # ,include_tables=['profile']
+
+# df = pd.read_excel('./passenger_Data.xlsx')
 
 llm = AzureChatOpenAI(model="gpt-35-turbo",
                       openai_api_key="2dd4400d079a4fd49ddd2e864802522a",
@@ -55,13 +62,14 @@ template = ("""
 
 
 agent= create_sql_agent(
-    llm=llm,
+    llm,
     toolkit=toolkit,
     verbose=True,
     agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION
 )
+# 
 
-from langchain.prompts import PromptTemplate
+
 
 prompt = PromptTemplate.from_template(template)
 
