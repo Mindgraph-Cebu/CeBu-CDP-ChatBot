@@ -46,9 +46,15 @@ def airline_chat(text):
             The column name Unique_passenger_id with the data type object contains the data of unique passenger id of the passenger
             
             The column name Travel_Date with the data type DateTime contains the data of the date travelled by the passenger
+                        
+            Important note : If the questions are not related to the database simply return "Please ask questions about the database"
+                        
+            Important note : If the questions are not related to the database simply return "Please ask questions about the database"
             
             Your job is to answer the following questions:
             {query}
+                        
+            The output should only only be in string format
             """)
     
     uri = "sqlite:///data.db"
@@ -60,14 +66,14 @@ def airline_chat(text):
 
     result = final_output(toolkit,airline_template,text)
 
-    if "don't" in result and "know" in result:
-        res = llm([HumanMessage(content=text)])
-        res = str(res)
-        res = res[9:-2]
-        print(res)
-        return res
-    else:
-        return result
+    # if "don't" in result and "know" in result:
+    #     res = llm([HumanMessage(content=text)])
+    #     res = str(res)
+    #     res = res[9:-2]
+    #     print(res)
+    #     return res
+    # else:
+    return result
 
     
 

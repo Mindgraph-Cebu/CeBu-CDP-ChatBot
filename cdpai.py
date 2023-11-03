@@ -10,13 +10,18 @@ CORS(app,origins="*")
 
 @app.route('/askme/airline', methods = ['GET'])
 def get_response():
+
+    try:
     
-    prompt = request.args.get("data")
-    data = {}
-    data["answer"] = airline_chat(prompt)   
-    print(data) 
+        prompt = request.args.get("data")
+        data = {}
+        data["answer"] = airline_chat(prompt)   
+        print(data) 
+        
+        return jsonify(data)
     
-    return jsonify(data)
+    except ValueError:
+        return jsonify({'answer':"Please ask questions about the database"})
     
 
 
