@@ -1,0 +1,893 @@
+2023-11-06 10:36:10 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2023-11-06 10:36:10 [INFO] [33mPress CTRL+C to quit[0m
+2023-11-06 10:36:16 [INFO] 127.0.0.1 - - [06/Nov/2023 10:36:16] "[33mGET / HTTP/1.1[0m" 404 -
+2023-11-06 10:36:16 [INFO] 127.0.0.1 - - [06/Nov/2023 10:36:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-11-06 10:37:34 [INFO] 127.0.0.1 - - [06/Nov/2023 10:37:34] "[33mGET / HTTP/1.1[0m" 404 -
+2023-11-06 10:39:06 [ERROR] Exception on /askme [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo T470\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo T470\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Lenovo T470\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Lenovo T470\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\Lenovo T470\Documents\NLP_Chatbot\customer360\clickhouse_pandasAI.py", line 41, in get_response
+    prompt = request.args.get("prompt").split("_")
+AttributeError: 'NoneType' object has no attribute 'split'
+2023-11-06 10:39:06 [INFO] 127.0.0.1 - - [06/Nov/2023 10:39:06] "[35m[1mGET /askme HTTP/1.1[0m" 500 -
+2023-11-06 10:40:30 [ERROR] Exception on /askme [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo T470\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo T470\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Lenovo T470\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Lenovo T470\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\Lenovo T470\Documents\NLP_Chatbot\customer360\clickhouse_pandasAI.py", line 41, in get_response
+    prompt = request.args.get("prompt").split("_")
+AttributeError: 'NoneType' object has no attribute 'split'
+2023-11-06 10:40:30 [INFO] 127.0.0.1 - - [06/Nov/2023 10:40:30] "[35m[1mGET /askme?data=how%20many%20columns%20are%20there%20in%20CaseTable HTTP/1.1[0m" 500 -
+2023-11-06 10:41:33 [ERROR] Exception on /askme [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo T470\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo T470\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Lenovo T470\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Lenovo T470\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\Lenovo T470\Documents\NLP_Chatbot\customer360\clickhouse_pandasAI.py", line 41, in get_response
+    prompt = request.args.get("prompt").split("_")
+AttributeError: 'NoneType' object has no attribute 'split'
+2023-11-06 10:41:33 [INFO] 127.0.0.1 - - [06/Nov/2023 10:41:33] "[35m[1mGET /askme?data=ow%20many%20customers%20are%20there HTTP/1.1[0m" 500 -
+2023-11-06 10:44:38 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2023-11-06 10:44:38 [INFO] [33mPress CTRL+C to quit[0m
+2023-11-06 10:46:10 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2023-11-06 10:46:10 [INFO] [33mPress CTRL+C to quit[0m
+2023-11-06 10:46:35 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2023-11-06 10:46:35 [INFO] [33mPress CTRL+C to quit[0m
+2023-11-06 11:04:25 [INFO] 127.0.0.1 - - [06/Nov/2023 11:04:25] "GET /askme?data=Are%20there%20any%20unresolved%20cases? HTTP/1.1" 200 -
+2023-11-06 11:04:46 [INFO] 127.0.0.1 - - [06/Nov/2023 11:04:46] "GET /askme?data=Can%20you%20tell%20me%20about%20case%20C111? HTTP/1.1" 200 -
+2023-11-06 11:09:26 [INFO] Question: Can you tell me about case C111?_
+2023-11-06 11:09:26 [INFO] Running PandasAI with azure-openai LLM...
+2023-11-06 11:09:26 [INFO] Prompt ID: 9b4adcfb-36b2-4e64-adc6-24dc59761bad
+2023-11-06 11:09:27 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 800 rows and 47 columns.
+This is the metadata of the dataframe dfs[0]:
+caseid,casetitle,description,status,priority,categorytype,reportedbycustomercustomerid,reportedbycustomerfirstname,reportedbycustomerlastname,reportedbycustomeremailaddress,reportedbycustomerphonenumber,assignedtotechniciantechnicianid,assignedtotechnicianfirstname,assignedtotechnicianlastname,assignedtotechnicianemailaddress,assignedtotechnicianphonenumber,creationdate,lastupdateddate,closeddate,resolution,attachments0filename,attachments0url,commentsnotes0author,commentsnotes0timestamp,commentsnotes0comment,relatedcustomercustomerid,relatedcustomerfirstname,relatedcustomerlastname,relatedcustomeremailaddress,relatedproductsservices0,relatedproductsservices1,customfieldscustomfield1,customfieldscustomfield2,referencesorderreference,referencestechnicianreference,audittrail0timestamp,audittrail0user,audittrail0changedescription,tagslabels0,tagslabels1,severity,duedate,location,clientinformationclientname,clientinformationclientcontact,clientinformationclientemail,clientinformationclientphone
+C1002,Network Connectivity P...,The network connection...,Resolved,Low,Networking,789,Michael,Williams,2ipdtrh14o@aol.com,3108060873,103,Michael,Williams,o8pqj644lq6@hotmail.com,8924560096,2023-12-25 08:00:00,2023-12-26 15:45:00,2023-12-27 16:30:00,Resolved,network_issue.txt,https://example.com/ne...,Admin,2023-12-25 08:15:00,Issue was related to a...,789,Michael,Williams,z-dq3ge6s@zoho.com,Product Z,Service B,Issue_Type5,Issue_Type6,Order #667788,Technician #103,2023-12-25 09:00:00,Admin,Resolved the network i...,Tag5,Tag6,Low,2023-12-31,"Texas, TX",PQR Corp,Chris Evans,h9ykka5yibq@outlook.com,3183569931
+C1000,Issue with Software In...,The software installat...,In Progress,High,Software,123,John,Smith,w3ks7ohxm6m@outlook.com,1692784252,101,John,Smith,0a9grwmln4j@hotmail.com,2966951028,2023-12-15 08:00:00,2023-12-15 10:15:00,,Check the compatibility with the OS,software_failure.txt,https://example.com/so...,Admin,2023-12-15 08:30:00,Issue escalated to sen...,123,John,Smith,rhq1ym2y2wl@aol.com,Product A,Service X,Issue_Type1,Issue_Type2,Order #112233,Technician #101,2023-12-15 09:00:00,Admin,Working on resolving t...,Tag1,Tag2,High,2023-12-20,"In Progress York, NY",ABC Corp,Adam West,rxgjay9r3m@gmail.com,1923727085
+C1001,Hardware Malfunction...,The hardware is showin...,In Progress,Medium,Hardware,456,Emily,Johnson,08mg_g@gmail.com,0564878510,102,Emily,Johnson,nk05wci2b7@hotmail.com,6894407157,2023-12-20 10:20:00,2023-12-21 17:15:00,,Investigate the issue and test the hardware,hardware_issue.doc,https://example.com/ha...,Admin,2023-12-20 10:30:00,Hardware issue being d...,456,Emily,Johnson,zuwgqd5rrhbz@gmail.com,Product Y,Service A,Issue_Type3,Issue_Type4,Order #445566,Technician #102,2023-12-20 11:00:00,Admin,Diagnosing the hardwar...,Tag3,Tag4,Medium,2023-12-25,"California, CA",XYZ Corp,Ben Parker,3pb92v_5n@aol.com,2328668657
+C1003,Database Query Perform...,Database queries are r...,In Progress,High,Database,234,Emma,Brown,m86tgkkekd@yahoo.com,4806774490,104,Emma,Brown,mnkhhkm6@hotmail.com,6306900235,2023-12-30 10:20:00,2023-12-31 17:15:00,,Investigate and optimize the queries,query_performance.log,https://example.com/qu...,Admin,2023-12-30 10:30:00,Database queries under...,234,Emma,Brown,f-fw67kkbs2@aol.com,Product X,Service C,Issue_Type7,Issue_Type8,Order #998877,Technician #104,2023-12-30 11:00:00,Admin,Optimizing database qu...,Tag7,Tag8,High,2023-01-05,"Florida, FL",LMN Corp,Diana Prince,9jxfp8u7kh@aol.com,5833210082
+C1004,Security Vulnerability...,Identified potential s...,In Progress,Low,Security,567,Oliver,Miller,11ye10p1ki4@protonmail.com,0477976407,105,Oliver,Miller,0vngokgyo0f@icloud.com,0196237276,2023-01-10 08:00:00,2023-01-11 15:45:00,,Investigate and mitigate the vulnerabilities,security_patch.doc,https://example.com/se...,Admin,2023-01-10 08:15:00,Vulnerability assessme...,567,Oliver,Miller,vri1w2j@yahoo.com,Product Y,Service A,Issue_Type9,Issue_Type10,Order #112299,Technician #105,2023-01-10 09:00:00,Admin,Addressing the securit...,Tag9,Tag10,Low,2023-01-15,"Washington, WA",XYZ Corp,Ben Parker,2686vuo@aol.com,0543491059
+</dataframe>
+
+<conversation>
+User 1: Can you tell me about case C111?_
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-11-06 11:09:43 [INFO] 127.0.0.1 - - [06/Nov/2023 11:09:43] "GET /askme?prompt=Can%20you%20tell%20me%20about%20case%20C111? HTTP/1.1" 200 -
+2023-11-06 11:13:41 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2023-11-06 11:13:41 [INFO] [33mPress CTRL+C to quit[0m
+2023-11-06 11:14:03 [INFO] Question: Can you tell me about case C111?_
+2023-11-06 11:14:04 [INFO] Running PandasAI with azure-openai LLM...
+2023-11-06 11:14:04 [INFO] Prompt ID: 5aae1cf8-1840-4efc-918a-d4c68c11690d
+2023-11-06 11:14:04 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 800 rows and 47 columns.
+This is the metadata of the dataframe dfs[0]:
+caseid,casetitle,description,status,priority,categorytype,reportedbycustomercustomerid,reportedbycustomerfirstname,reportedbycustomerlastname,reportedbycustomeremailaddress,reportedbycustomerphonenumber,assignedtotechniciantechnicianid,assignedtotechnicianfirstname,assignedtotechnicianlastname,assignedtotechnicianemailaddress,assignedtotechnicianphonenumber,creationdate,lastupdateddate,closeddate,resolution,attachments0filename,attachments0url,commentsnotes0author,commentsnotes0timestamp,commentsnotes0comment,relatedcustomercustomerid,relatedcustomerfirstname,relatedcustomerlastname,relatedcustomeremailaddress,relatedproductsservices0,relatedproductsservices1,customfieldscustomfield1,customfieldscustomfield2,referencesorderreference,referencestechnicianreference,audittrail0timestamp,audittrail0user,audittrail0changedescription,tagslabels0,tagslabels1,severity,duedate,location,clientinformationclientname,clientinformationclientcontact,clientinformationclientemail,clientinformationclientphone
+C1001,Hardware Malfunction,The hardware is showin...,In Progress,Medium,Hardware,456,Emily,Johnson,3cektnr@icloud.com,6009666667,102,Emily,Johnson,vkl-djftrub@yahoo.com,9883475817,2023-12-20 10:20:00,2023-12-21 17:15:00,,Investigate the issue ...,hardware_issue.doc,https://example.com/ha...,Admin,2023-12-20 10:30:00,Hardware issue being d...,456,Emily,Johnson,gtmkn0kz5@protonmail.com,Product Y,Service A,Issue_Type3,Issue_Type4,Order #445566,Technician #102,2023-12-20 11:00:00,Admin,Diagnosing the hardwar...,Tag3,Tag4,Medium,2023-12-25,"California, CA",XYZ Corp,Ben Parker,zt9imqayp@yahoo.com,3040792802
+C1003,Database Query Performance,Database queries are r...,In Progress,High,Database,234,Emma,Brown,gq9urdaok6@aol.com,3232178579,104,Emma,Brown,ywrju-x1@aol.com,3327444275,2023-12-30 10:20:00,2023-12-31 17:15:00,,Investigate and optimi...,query_performance.log,https://example.com/qu...,Admin,2023-12-30 10:30:00,Database queries under...,234,Emma,Brown,rqdsadl5-hla@gmail.com,Product X,Service C,Issue_Type7,Issue_Type8,Order #998877,Technician #104,2023-12-30 11:00:00,Admin,Optimizing database qu...,Tag7,Tag8,High,2023-01-05,"Florida, FL",LMN Corp,Diana Prince,d5v-947i3e@outlook.com,8874552410
+C1002,Network Connectivity Problem,The network connection...,Resolved,Low,Networking,789,Michael,Williams,0-my_2@icloud.com,7619472630,103,Michael,Williams,wiveky@gmail.com,3097574895,2023-12-25 08:00:00,2023-12-26 15:45:00,2023-12-27 16:30:00,Resolved...,network_issue.txt,https://example.com/ne...,Admin,2023-12-25 08:15:00,Issue was related to a...,789,Michael,Williams,s0hr830x0xus@gmail.com,Product Z,Service B,Issue_Type5,Issue_Type6,Order #667788,Technician #103,2023-12-25 09:00:00,Admin,Resolved the network i...,Tag5,Tag6,Low,2023-12-31,"Texas, TX",PQR Corp,Chris Evans,03h-yrwt8@zoho.com,0178207778
+C1000,Issue with Software Installation,The software installat...,In Progress,High,Software,123,John,Smith,sgct4y140b1@yahoo.com,1174659999,101,John,Smith,ui9p7xv97m1@aol.com,3887555117,2023-12-15 08:00:00,2023-12-15 10:15:00,,Check the compatibilit...,software_failure.txt,https://example.com/so...,Admin,2023-12-15 08:30:00,Issue escalated to sen...,123,John,Smith,v734h8@outlook.com,Product A,Service X,Issue_Type1,Issue_Type2,Order #112233,Technician #101,2023-12-15 09:00:00,Admin,Working on resolving t...,Tag1,Tag2,High,2023-12-20,"In Progress York, NY",ABC Corp,Adam West,cn5cthv@protonmail.com,5223747169
+C1004,Security Vulnerability,Identified potential s...,In Progress,Low,Security,567,Oliver,Miller,_zl7l6vb@gmail.com,9267266649,105,Oliver,Miller,3013qc3j_p@zoho.com,3422693939,2023-01-10 08:00:00,2023-01-11 15:45:00,,Investigate and mitiga...,security_patch.doc,https://example.com/se...,Admin,2023-01-10 08:15:00,Vulnerability assessme...,567,Oliver,Miller,_87t3l7n75@outlook.com,Product Y,Service A,Issue_Type9,Issue_Type10,Order #112299,Technician #105,2023-01-10 09:00:00,Admin,Addressing the securit...,Tag9,Tag10,Low,2023-01-15,"Washington, WA",XYZ Corp,Ben Parker,_4-tphl3xxlm@yahoo.com,1701031873
+</dataframe>
+
+<conversation>
+User 1: Can you tell me about case C111?_
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-11-06 11:14:15 [INFO] 127.0.0.1 - - [06/Nov/2023 11:14:15] "GET /askme?prompt=Can%20you%20tell%20me%20about%20case%20C111? HTTP/1.1" 200 -
+2023-11-06 11:31:11 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2023-11-06 11:31:11 [INFO] [33mPress CTRL+C to quit[0m
+2023-11-06 11:32:31 [INFO] Question: What_is_the_status_of_case_C111__
+2023-11-06 11:32:31 [INFO] Running PandasAI with azure-openai LLM...
+2023-11-06 11:32:31 [INFO] Prompt ID: 3fc4082b-6407-4a48-ac68-676ad963abf4
+2023-11-06 11:32:31 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 800 rows and 47 columns.
+This is the metadata of the dataframe dfs[0]:
+caseid,casetitle,description,status,priority,categorytype,reportedbycustomercustomerid,reportedbycustomerfirstname,reportedbycustomerlastname,reportedbycustomeremailaddress,reportedbycustomerphonenumber,assignedtotechniciantechnicianid,assignedtotechnicianfirstname,assignedtotechnicianlastname,assignedtotechnicianemailaddress,assignedtotechnicianphonenumber,creationdate,lastupdateddate,closeddate,resolution,attachments0filename,attachments0url,commentsnotes0author,commentsnotes0timestamp,commentsnotes0comment,relatedcustomercustomerid,relatedcustomerfirstname,relatedcustomerlastname,relatedcustomeremailaddress,relatedproductsservices0,relatedproductsservices1,customfieldscustomfield1,customfieldscustomfield2,referencesorderreference,referencestechnicianreference,audittrail0timestamp,audittrail0user,audittrail0changedescription,tagslabels0,tagslabels1,severity,duedate,location,clientinformationclientname,clientinformationclientcontact,clientinformationclientemail,clientinformationclientphone
+C1001,Hardware Malfunction,The hardware is showin...,In Progress,Medium,Hardware,456,Emily,Johnson,3ic89y5b@icloud.com,7976303813,102,Emily,Johnson,d_6jw3@aol.com,4930078152,2023-12-20 10:20:00,2023-12-21 17:15:00,,Investigate the issue ...,hardware_issue.doc,https://example.com/ha...,Admin,2023-12-20 10:30:00,Hardware issue being d...,456,Emily,Johnson,qz9fdg0yq9@zoho.com,Product Y,Service A,Issue_Type3,Issue_Type4,Order #445566,Technician #102,2023-12-20 11:00:00,Admin,Diagnosing the hardwar...,Tag3,Tag4,Medium,2023-12-25,"California, CA",XYZ Corp,Ben Parker,i1798nib9h@hotmail.com,1241880678
+C1004,Security Vulnerability,Identified potential s...,In Progress,Low,Security,567,Oliver,Miller,cotqp0jdfx@outlook.com,6146077475,105,Oliver,Miller,mr2nteub6_x@aol.com,1512592962,2023-01-10 08:00:00,2023-01-11 15:45:00,,Investigate and mitiga...,security_patch.doc,https://example.com/se...,Admin,2023-01-10 08:15:00,Vulnerability assessme...,567,Oliver,Miller,62_qtu@protonmail.com,Product Y,Service A,Issue_Type9,Issue_Type10,Order #112299,Technician #105,2023-01-10 09:00:00,Admin,Addressing the securit...,Tag9,Tag10,Low,2023-01-15,"Washington, WA",XYZ Corp,Ben Parker,ttojy2iqv-@zoho.com,4646377680
+C1002,Network Connectivity Problem,The network connection...,Resolved,Low,Networking,789,Michael,Williams,le_shlp895@outlook.com,5236446326,103,Michael,Williams,xewt9pksky@hotmail.com,3158481652,2023-12-25 08:00:00,2023-12-26 15:45:00,2023-12-27 16:30:00,Resolved...,network_issue.txt,https://example.com/ne...,Admin,2023-12-25 08:15:00,Issue was related to a...,789,Michael,Williams,ywwj7-12-f@outlook.com,Product Z,Service B,Issue_Type5,Issue_Type6,Order #667788,Technician #103,2023-12-25 09:00:00,Admin,Resolved the network i...,Tag5,Tag6,Low,2023-12-31,"Texas, TX",PQR Corp,Chris Evans,lp9vateoc9z-@yahoo.com,1601039669
+C1003,Database Query Performance,Database queries are r...,In Progress,High,Database,234,Emma,Brown,nk23t7-p6@hotmail.com,7639524671,104,Emma,Brown,v7jgfs92oa@aol.com,9345484306,2023-12-30 10:20:00,2023-12-31 17:15:00,,Investigate and optimi...,query_performance.log,https://example.com/qu...,Admin,2023-12-30 10:30:00,Database queries under...,234,Emma,Brown,4al6_8lvks8@hotmail.com,Product X,Service C,Issue_Type7,Issue_Type8,Order #998877,Technician #104,2023-12-30 11:00:00,Admin,Optimizing database qu...,Tag7,Tag8,High,2023-01-05,"Florida, FL",LMN Corp,Diana Prince,dtmw2vx5@icloud.com,4930157882
+C1000,Issue with Software Installation,The software installat...,In Progress,High,Software,123,John,Smith,f0v48sajz@yahoo.com,2904559517,101,John,Smith,1c9enbrgfu@gmail.com,2159003954,2023-12-15 08:00:00,2023-12-15 10:15:00,,Check the compatibilit...,software_failure.txt,https://example.com/so...,Admin,2023-12-15 08:30:00,Issue escalated to sen...,123,John,Smith,bjmag-o@protonmail.com,Product A,Service X,Issue_Type1,Issue_Type2,Order #112233,Technician #101,2023-12-15 09:00:00,Admin,Working on resolving t...,Tag1,Tag2,High,2023-12-20,"In Progress York, NY",ABC Corp,Adam West,4vujh3itd@protonmail.com,6719561360
+</dataframe>
+
+<conversation>
+User 1: What_is_the_status_of_case_C111__
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-11-06 11:32:37 [INFO] Code generated:
+```
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    # Extract the relevant dataframe from dfs
+    df = dfs[0]
+    
+    # Filter the dataframe based on the caseid
+    case_id = "C111"
+    filtered_df = df[df["caseid"] == case_id]
+    
+    # Check if the case exists
+    if filtered_df.empty:
+        return {"type": "string", "value": f"The case {case_id} does not exist."}
+    
+    # Get the status of the case
+    status = filtered_df["status"].iloc[0]
+    
+    return {"type": "string", "value": f"The status of case {case_id} is {status}."}
+```
+
+2023-11-06 11:32:37 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    df = dfs[0]
+    case_id = 'C111'
+    filtered_df = df[df['caseid'] == case_id]
+    if filtered_df.empty:
+        return {'type': 'string', 'value': f'The case {case_id} does not exist.'}
+    status = filtered_df['status'].iloc[0]
+    return {'type': 'string', 'value': f'The status of case {case_id} is {status}.'}
+        ```
+2023-11-06 11:32:37 [INFO] Answer: {'type': 'string', 'value': 'The status of case C111 is In Progress.'}
+2023-11-06 11:32:37 [INFO] Executed in: 6.689751863479614s
+2023-11-06 11:32:37 [INFO] 127.0.0.1 - - [06/Nov/2023 11:32:37] "GET /askme?prompt=What_is_the_status_of_case_C111_ HTTP/1.1" 200 -
+2023-11-06 11:33:29 [INFO] Question: Who reported case C112?_
+2023-11-06 11:33:29 [INFO] Running PandasAI with azure-openai LLM...
+2023-11-06 11:33:29 [INFO] Prompt ID: 13e3e5ca-0335-4305-8709-7133880ea1e1
+2023-11-06 11:33:29 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 800 rows and 47 columns.
+This is the metadata of the dataframe dfs[0]:
+caseid,casetitle,description,status,priority,categorytype,reportedbycustomercustomerid,reportedbycustomerfirstname,reportedbycustomerlastname,reportedbycustomeremailaddress,reportedbycustomerphonenumber,assignedtotechniciantechnicianid,assignedtotechnicianfirstname,assignedtotechnicianlastname,assignedtotechnicianemailaddress,assignedtotechnicianphonenumber,creationdate,lastupdateddate,closeddate,resolution,attachments0filename,attachments0url,commentsnotes0author,commentsnotes0timestamp,commentsnotes0comment,relatedcustomercustomerid,relatedcustomerfirstname,relatedcustomerlastname,relatedcustomeremailaddress,relatedproductsservices0,relatedproductsservices1,customfieldscustomfield1,customfieldscustomfield2,referencesorderreference,referencestechnicianreference,audittrail0timestamp,audittrail0user,audittrail0changedescription,tagslabels0,tagslabels1,severity,duedate,location,clientinformationclientname,clientinformationclientcontact,clientinformationclientemail,clientinformationclientphone
+C1001,Hardware Malfunction,The hardware is showin...,In Progress,Medium,Hardware,456,Emily,Johnson,3ic89y5b@icloud.com,7976303813,102,Emily,Johnson,d_6jw3@aol.com,4930078152,2023-12-20 10:20:00,2023-12-21 17:15:00,,Investigate the issue ...,hardware_issue.doc,https://example.com/ha...,Admin,2023-12-20 10:30:00,Hardware issue being d...,456,Emily,Johnson,qz9fdg0yq9@zoho.com,Product Y,Service A,Issue_Type3,Issue_Type4,Order #445566,Technician #102,2023-12-20 11:00:00,Admin,Diagnosing the hardwar...,Tag3,Tag4,Medium,2023-12-25,"California, CA",XYZ Corp,Ben Parker,i1798nib9h@hotmail.com,1241880678
+C1004,Security Vulnerability,Identified potential s...,In Progress,Low,Security,567,Oliver,Miller,cotqp0jdfx@outlook.com,6146077475,105,Oliver,Miller,mr2nteub6_x@aol.com,1512592962,2023-01-10 08:00:00,2023-01-11 15:45:00,,Investigate and mitiga...,security_patch.doc,https://example.com/se...,Admin,2023-01-10 08:15:00,Vulnerability assessme...,567,Oliver,Miller,62_qtu@protonmail.com,Product Y,Service A,Issue_Type9,Issue_Type10,Order #112299,Technician #105,2023-01-10 09:00:00,Admin,Addressing the securit...,Tag9,Tag10,Low,2023-01-15,"Washington, WA",XYZ Corp,Ben Parker,ttojy2iqv-@zoho.com,4646377680
+C1002,Network Connectivity Problem,The network connection...,Resolved,Low,Networking,789,Michael,Williams,le_shlp895@outlook.com,5236446326,103,Michael,Williams,xewt9pksky@hotmail.com,3158481652,2023-12-25 08:00:00,2023-12-26 15:45:00,2023-12-27 16:30:00,Resolved...,network_issue.txt,https://example.com/ne...,Admin,2023-12-25 08:15:00,Issue was related to a...,789,Michael,Williams,ywwj7-12-f@outlook.com,Product Z,Service B,Issue_Type5,Issue_Type6,Order #667788,Technician #103,2023-12-25 09:00:00,Admin,Resolved the network i...,Tag5,Tag6,Low,2023-12-31,"Texas, TX",PQR Corp,Chris Evans,lp9vateoc9z-@yahoo.com,1601039669
+C1003,Database Query Performance,Database queries are r...,In Progress,High,Database,234,Emma,Brown,nk23t7-p6@hotmail.com,7639524671,104,Emma,Brown,v7jgfs92oa@aol.com,9345484306,2023-12-30 10:20:00,2023-12-31 17:15:00,,Investigate and optimi...,query_performance.log,https://example.com/qu...,Admin,2023-12-30 10:30:00,Database queries under...,234,Emma,Brown,4al6_8lvks8@hotmail.com,Product X,Service C,Issue_Type7,Issue_Type8,Order #998877,Technician #104,2023-12-30 11:00:00,Admin,Optimizing database qu...,Tag7,Tag8,High,2023-01-05,"Florida, FL",LMN Corp,Diana Prince,dtmw2vx5@icloud.com,4930157882
+C1000,Issue with Software Installation,The software installat...,In Progress,High,Software,123,John,Smith,f0v48sajz@yahoo.com,2904559517,101,John,Smith,1c9enbrgfu@gmail.com,2159003954,2023-12-15 08:00:00,2023-12-15 10:15:00,,Check the compatibilit...,software_failure.txt,https://example.com/so...,Admin,2023-12-15 08:30:00,Issue escalated to sen...,123,John,Smith,bjmag-o@protonmail.com,Product A,Service X,Issue_Type1,Issue_Type2,Order #112233,Technician #101,2023-12-15 09:00:00,Admin,Working on resolving t...,Tag1,Tag2,High,2023-12-20,"In Progress York, NY",ABC Corp,Adam West,4vujh3itd@protonmail.com,6719561360
+</dataframe>
+
+<conversation>
+User 1: Who reported case C112?_
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-11-06 11:33:35 [INFO] Code generated:
+```
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    # Extract the relevant dataframe
+    df = dfs[0]
+    
+    # Find the reported case
+    reported_case = df[df['caseid'] == 'C112']
+    
+    # Check if the reported case exists
+    if reported_case.empty:
+        return {"type": "string", "value": "The reported case C112 does not exist."}
+    
+    # Get the information about the reporter
+    reporter_firstname = reported_case['reportedbycustomerfirstname'].values[0]
+    reporter_lastname = reported_case['reportedbycustomerlastname'].values[0]
+    reporter_email = reported_case['reportedbycustomeremailaddress'].values[0]
+    reporter_phone = reported_case['reportedbycustomerphonenumber'].values[0]
+    
+    # Prepare the response
+    response = f"The case C112 was reported by {reporter_firstname} {reporter_lastname}."
+    response += f"\nContact details: Email - {reporter_email}, Phone - {reporter_phone}"
+    
+    return {"type": "string", "value": response}
+```
+
+2023-11-06 11:33:35 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    df = dfs[0]
+    reported_case = df[df['caseid'] == 'C112']
+    if reported_case.empty:
+        return {'type': 'string', 'value': 'The reported case C112 does not exist.'}
+    reporter_firstname = reported_case['reportedbycustomerfirstname'].values[0]
+    reporter_lastname = reported_case['reportedbycustomerlastname'].values[0]
+    reporter_email = reported_case['reportedbycustomeremailaddress'].values[0]
+    reporter_phone = reported_case['reportedbycustomerphonenumber'].values[0]
+    response = f'The case C112 was reported by {reporter_firstname} {reporter_lastname}.'
+    response += f'\nContact details: Email - {reporter_email}, Phone - {reporter_phone}'
+    return {'type': 'string', 'value': response}
+        ```
+2023-11-06 11:33:35 [INFO] Answer: {'type': 'string', 'value': 'The case C112 was reported by Jaya Barathi.\nContact details: Email - john.doe@example.com, Phone - 123-456-7890'}
+2023-11-06 11:33:35 [INFO] Executed in: 6.177417278289795s
+2023-11-06 11:33:35 [INFO] 127.0.0.1 - - [06/Nov/2023 11:33:35] "GET /askme?prompt=Who%20reported%20case%20C112? HTTP/1.1" 200 -
+2023-11-06 11:34:38 [INFO] Question: Give me column names of CaseTable _
+2023-11-06 11:34:38 [INFO] Running PandasAI with azure-openai LLM...
+2023-11-06 11:34:38 [INFO] Prompt ID: 190ac416-f488-4e15-931b-771040d5b2aa
+2023-11-06 11:34:38 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 800 rows and 47 columns.
+This is the metadata of the dataframe dfs[0]:
+caseid,casetitle,description,status,priority,categorytype,reportedbycustomercustomerid,reportedbycustomerfirstname,reportedbycustomerlastname,reportedbycustomeremailaddress,reportedbycustomerphonenumber,assignedtotechniciantechnicianid,assignedtotechnicianfirstname,assignedtotechnicianlastname,assignedtotechnicianemailaddress,assignedtotechnicianphonenumber,creationdate,lastupdateddate,closeddate,resolution,attachments0filename,attachments0url,commentsnotes0author,commentsnotes0timestamp,commentsnotes0comment,relatedcustomercustomerid,relatedcustomerfirstname,relatedcustomerlastname,relatedcustomeremailaddress,relatedproductsservices0,relatedproductsservices1,customfieldscustomfield1,customfieldscustomfield2,referencesorderreference,referencestechnicianreference,audittrail0timestamp,audittrail0user,audittrail0changedescription,tagslabels0,tagslabels1,severity,duedate,location,clientinformationclientname,clientinformationclientcontact,clientinformationclientemail,clientinformationclientphone
+C1001,Hardware Malfunction,The hardware is showin...,In Progress,Medium,Hardware,456,Emily,Johnson,3ic89y5b@icloud.com,7976303813,102,Emily,Johnson,d_6jw3@aol.com,4930078152,2023-12-20 10:20:00,2023-12-21 17:15:00,,Investigate the issue ...,hardware_issue.doc,https://example.com/ha...,Admin,2023-12-20 10:30:00,Hardware issue being d...,456,Emily,Johnson,qz9fdg0yq9@zoho.com,Product Y,Service A,Issue_Type3,Issue_Type4,Order #445566,Technician #102,2023-12-20 11:00:00,Admin,Diagnosing the hardwar...,Tag3,Tag4,Medium,2023-12-25,"California, CA",XYZ Corp,Ben Parker,i1798nib9h@hotmail.com,1241880678
+C1004,Security Vulnerability,Identified potential s...,In Progress,Low,Security,567,Oliver,Miller,cotqp0jdfx@outlook.com,6146077475,105,Oliver,Miller,mr2nteub6_x@aol.com,1512592962,2023-01-10 08:00:00,2023-01-11 15:45:00,,Investigate and mitiga...,security_patch.doc,https://example.com/se...,Admin,2023-01-10 08:15:00,Vulnerability assessme...,567,Oliver,Miller,62_qtu@protonmail.com,Product Y,Service A,Issue_Type9,Issue_Type10,Order #112299,Technician #105,2023-01-10 09:00:00,Admin,Addressing the securit...,Tag9,Tag10,Low,2023-01-15,"Washington, WA",XYZ Corp,Ben Parker,ttojy2iqv-@zoho.com,4646377680
+C1002,Network Connectivity Problem,The network connection...,Resolved,Low,Networking,789,Michael,Williams,le_shlp895@outlook.com,5236446326,103,Michael,Williams,xewt9pksky@hotmail.com,3158481652,2023-12-25 08:00:00,2023-12-26 15:45:00,2023-12-27 16:30:00,Resolved...,network_issue.txt,https://example.com/ne...,Admin,2023-12-25 08:15:00,Issue was related to a...,789,Michael,Williams,ywwj7-12-f@outlook.com,Product Z,Service B,Issue_Type5,Issue_Type6,Order #667788,Technician #103,2023-12-25 09:00:00,Admin,Resolved the network i...,Tag5,Tag6,Low,2023-12-31,"Texas, TX",PQR Corp,Chris Evans,lp9vateoc9z-@yahoo.com,1601039669
+C1003,Database Query Performance,Database queries are r...,In Progress,High,Database,234,Emma,Brown,nk23t7-p6@hotmail.com,7639524671,104,Emma,Brown,v7jgfs92oa@aol.com,9345484306,2023-12-30 10:20:00,2023-12-31 17:15:00,,Investigate and optimi...,query_performance.log,https://example.com/qu...,Admin,2023-12-30 10:30:00,Database queries under...,234,Emma,Brown,4al6_8lvks8@hotmail.com,Product X,Service C,Issue_Type7,Issue_Type8,Order #998877,Technician #104,2023-12-30 11:00:00,Admin,Optimizing database qu...,Tag7,Tag8,High,2023-01-05,"Florida, FL",LMN Corp,Diana Prince,dtmw2vx5@icloud.com,4930157882
+C1000,Issue with Software Installation,The software installat...,In Progress,High,Software,123,John,Smith,f0v48sajz@yahoo.com,2904559517,101,John,Smith,1c9enbrgfu@gmail.com,2159003954,2023-12-15 08:00:00,2023-12-15 10:15:00,,Check the compatibilit...,software_failure.txt,https://example.com/so...,Admin,2023-12-15 08:30:00,Issue escalated to sen...,123,John,Smith,bjmag-o@protonmail.com,Product A,Service X,Issue_Type1,Issue_Type2,Order #112233,Technician #101,2023-12-15 09:00:00,Admin,Working on resolving t...,Tag1,Tag2,High,2023-12-20,"In Progress York, NY",ABC Corp,Adam West,4vujh3itd@protonmail.com,6719561360
+</dataframe>
+
+<conversation>
+User 1: Give me column names of CaseTable _
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-11-06 11:34:43 [INFO] Code generated:
+```
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    # Get the column names of CaseTable
+    column_names = dfs[0].columns.tolist()
+    
+    return {"type": "string", "value": ", ".join(column_names)}
+```
+
+2023-11-06 11:34:43 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    column_names = dfs[0].columns.tolist()
+    return {'type': 'string', 'value': ', '.join(column_names)}
+        ```
+2023-11-06 11:34:43 [INFO] Answer: {'type': 'string', 'value': 'caseid, casetitle, description, status, priority, categorytype, reportedbycustomercustomerid, reportedbycustomerfirstname, reportedbycustomerlastname, reportedbycustomeremailaddress, reportedbycustomerphonenumber, assignedtotechniciantechnicianid, assignedtotechnicianfirstname, assignedtotechnicianlastname, assignedtotechnicianemailaddress, assignedtotechnicianphonenumber, creationdate, lastupdateddate, closeddate, resolution, attachments0filename, attachments0url, commentsnotes0author, commentsnotes0timestamp, commentsnotes0comment, relatedcustomercustomerid, relatedcustomerfirstname, relatedcustomerlastname, relatedcustomeremailaddress, relatedproductsservices0, relatedproductsservices1, customfieldscustomfield1, customfieldscustomfield2, referencesorderreference, referencestechnicianreference, audittrail0timestamp, audittrail0user, audittrail0changedescription, tagslabels0, tagslabels1, severity, duedate, location, clientinformationclientname, clientinformationclientcontact, clientinformationclientemail, clientinformationclientphone'}
+2023-11-06 11:34:43 [INFO] Executed in: 5.6548309326171875s
+2023-11-06 11:34:43 [INFO] 127.0.0.1 - - [06/Nov/2023 11:34:43] "GET /askme?prompt=Give%20me%20column%20names%20of%20CaseTable%20 HTTP/1.1" 200 -
+2023-11-06 11:46:17 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2023-11-06 11:46:17 [INFO] [33mPress CTRL+C to quit[0m
+2023-11-06 11:46:25 [INFO] 127.0.0.1 - - [06/Nov/2023 11:46:25] "[33mGET / HTTP/1.1[0m" 404 -
+2023-11-06 11:46:33 [INFO] Question: Give me column names of CaseTable _
+2023-11-06 11:46:34 [INFO] Running PandasAI with azure-openai LLM...
+2023-11-06 11:46:34 [INFO] Prompt ID: c904f858-691d-489b-b2f2-78db6e9feb79
+2023-11-06 11:46:34 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 800 rows and 47 columns.
+This is the metadata of the dataframe dfs[0]:
+caseid,casetitle,description,status,priority,categorytype,reportedbycustomercustomerid,reportedbycustomerfirstname,reportedbycustomerlastname,reportedbycustomeremailaddress,reportedbycustomerphonenumber,assignedtotechniciantechnicianid,assignedtotechnicianfirstname,assignedtotechnicianlastname,assignedtotechnicianemailaddress,assignedtotechnicianphonenumber,creationdate,lastupdateddate,closeddate,resolution,attachments0filename,attachments0url,commentsnotes0author,commentsnotes0timestamp,commentsnotes0comment,relatedcustomercustomerid,relatedcustomerfirstname,relatedcustomerlastname,relatedcustomeremailaddress,relatedproductsservices0,relatedproductsservices1,customfieldscustomfield1,customfieldscustomfield2,referencesorderreference,referencestechnicianreference,audittrail0timestamp,audittrail0user,audittrail0changedescription,tagslabels0,tagslabels1,severity,duedate,location,clientinformationclientname,clientinformationclientcontact,clientinformationclientemail,clientinformationclientphone
+C1004,Security Vulnerability,Identified potential s...,In Progress,Low,Security,567,Oliver,Miller,-i1bk4xbo90@yahoo.com,1171719594,105,Oliver,Miller,ffovnc4codhf@gmail.com,9368541408,2023-01-10 08:00:00,2023-01-11 15:45:00,,Investigate and mitiga...,security_patch.doc,https://example.com/se...,Admin,2023-01-10 08:15:00,Vulnerability assessme...,567,Oliver,Miller,a1q_r2if7@yahoo.com,Product Y,Service A,Issue_Type9,Issue_Type10,Order #112299,Technician #105,2023-01-10 09:00:00,Admin,Addressing the securit...,Tag9,Tag10,Low,2023-01-15,"Washington, WA",XYZ Corp,Ben Parker,4f-cp105@icloud.com,1954109052
+C1000,Issue with Software Installation,The software installat...,In Progress,High,Software,123,John,Smith,c7pp-8f9a2@icloud.com,0413177078,101,John,Smith,m5jhfg@aol.com,4204136091,2023-12-15 08:00:00,2023-12-15 10:15:00,,Check the compatibilit...,software_failure.txt,https://example.com/so...,Admin,2023-12-15 08:30:00,Issue escalated to sen...,123,John,Smith,3v0ppl5j@icloud.com,Product A,Service X,Issue_Type1,Issue_Type2,Order #112233,Technician #101,2023-12-15 09:00:00,Admin,Working on resolving t...,Tag1,Tag2,High,2023-12-20,"In Progress York, NY",ABC Corp,Adam West,__u-eni8edy@gmail.com,1396950359
+C1002,Network Connectivity Problem,The network connection...,Resolved,Low,Networking,789,Michael,Williams,z0hqu25@zoho.com,2716998313,103,Michael,Williams,2zjpw9unyf@yahoo.com,8748265078,2023-12-25 08:00:00,2023-12-26 15:45:00,2023-12-27 16:30:00,Resolved...,network_issue.txt,https://example.com/ne...,Admin,2023-12-25 08:15:00,Issue was related to a...,789,Michael,Williams,0ke-z50@icloud.com,Product Z,Service B,Issue_Type5,Issue_Type6,Order #667788,Technician #103,2023-12-25 09:00:00,Admin,Resolved the network i...,Tag5,Tag6,Low,2023-12-31,"Texas, TX",PQR Corp,Chris Evans,iz1sm2q@zoho.com,4298324568
+C1003,Database Query Performance,Database queries are r...,In Progress,High,Database,234,Emma,Brown,-4xogd8l@zoho.com,5228493857,104,Emma,Brown,tkxmohk@protonmail.com,7479768714,2023-12-30 10:20:00,2023-12-31 17:15:00,,Investigate and optimi...,query_performance.log,https://example.com/qu...,Admin,2023-12-30 10:30:00,Database queries under...,234,Emma,Brown,pnwof114ij@zoho.com,Product X,Service C,Issue_Type7,Issue_Type8,Order #998877,Technician #104,2023-12-30 11:00:00,Admin,Optimizing database qu...,Tag7,Tag8,High,2023-01-05,"Florida, FL",LMN Corp,Diana Prince,3k033wc6g3@outlook.com,9855694965
+C1001,Hardware Malfunction,The hardware is showin...,In Progress,Medium,Hardware,456,Emily,Johnson,imye3m-tv@icloud.com,5910534847,102,Emily,Johnson,wubdpiu6p@aol.com,5410614937,2023-12-20 10:20:00,2023-12-21 17:15:00,,Investigate the issue ...,hardware_issue.doc,https://example.com/ha...,Admin,2023-12-20 10:30:00,Hardware issue being d...,456,Emily,Johnson,04rdah@zoho.com,Product Y,Service A,Issue_Type3,Issue_Type4,Order #445566,Technician #102,2023-12-20 11:00:00,Admin,Diagnosing the hardwar...,Tag3,Tag4,Medium,2023-12-25,"California, CA",XYZ Corp,Ben Parker,_q32v-ivqreo@hotmail.com,9110707561
+</dataframe>
+
+<conversation>
+User 1: Give me column names of CaseTable _
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-11-06 11:46:39 [INFO] Code generated:
+```
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    # Get the column names of CaseTable
+    case_table_columns = dfs[0].columns.tolist()
+    
+    return {"type": "string", "value": ", ".join(case_table_columns)}
+```
+
+2023-11-06 11:46:39 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    case_table_columns = dfs[0].columns.tolist()
+    return {'type': 'string', 'value': ', '.join(case_table_columns)}
+        ```
+2023-11-06 11:46:39 [INFO] Answer: {'type': 'string', 'value': 'caseid, casetitle, description, status, priority, categorytype, reportedbycustomercustomerid, reportedbycustomerfirstname, reportedbycustomerlastname, reportedbycustomeremailaddress, reportedbycustomerphonenumber, assignedtotechniciantechnicianid, assignedtotechnicianfirstname, assignedtotechnicianlastname, assignedtotechnicianemailaddress, assignedtotechnicianphonenumber, creationdate, lastupdateddate, closeddate, resolution, attachments0filename, attachments0url, commentsnotes0author, commentsnotes0timestamp, commentsnotes0comment, relatedcustomercustomerid, relatedcustomerfirstname, relatedcustomerlastname, relatedcustomeremailaddress, relatedproductsservices0, relatedproductsservices1, customfieldscustomfield1, customfieldscustomfield2, referencesorderreference, referencestechnicianreference, audittrail0timestamp, audittrail0user, audittrail0changedescription, tagslabels0, tagslabels1, severity, duedate, location, clientinformationclientname, clientinformationclientcontact, clientinformationclientemail, clientinformationclientphone'}
+2023-11-06 11:46:39 [INFO] Executed in: 5.655380010604858s
+2023-11-06 11:46:39 [INFO] 127.0.0.1 - - [06/Nov/2023 11:46:39] "GET /askme?prompt=Give%20me%20column%20names%20of%20CaseTable%20 HTTP/1.1" 200 -
+2023-11-06 11:57:40 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2023-11-06 11:57:40 [INFO] [33mPress CTRL+C to quit[0m
+2023-11-06 12:16:55 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2023-11-06 12:16:55 [INFO] [33mPress CTRL+C to quit[0m
+2023-11-06 12:17:37 [INFO] Question: What are the cases with status "Resolved"?_
+2023-11-06 12:17:37 [INFO] Running PandasAI with azure-openai LLM...
+2023-11-06 12:17:37 [INFO] Prompt ID: 89938792-8100-4428-a571-e8378104a134
+2023-11-06 12:17:37 [INFO] 127.0.0.1 - - [06/Nov/2023 12:17:37] "GET /askme?prompt=What%20are%20the%20cases%20with%20status%20"Resolved"? HTTP/1.1" 200 -
+2023-11-06 12:44:45 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2023-11-06 12:44:45 [INFO] [33mPress CTRL+C to quit[0m
+2023-11-06 12:44:51 [INFO] 127.0.0.1 - - [06/Nov/2023 12:44:51] "[33mGET / HTTP/1.1[0m" 404 -
+2023-11-06 12:44:58 [INFO] Question: What are the cases with status "Resolved"?_
+2023-11-06 12:44:58 [INFO] Running PandasAI with azure-openai LLM...
+2023-11-06 12:44:58 [INFO] Prompt ID: 702e66ac-da00-4934-bcf0-cc94140f7fe6
+2023-11-06 12:44:58 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 800 rows and 47 columns.
+This is the metadata of the dataframe dfs[0]:
+caseid,casetitle,description,status,priority,categorytype,reportedbycustomercustomerid,reportedbycustomerfirstname,reportedbycustomerlastname,reportedbycustomeremailaddress,reportedbycustomerphonenumber,assignedtotechniciantechnicianid,assignedtotechnicianfirstname,assignedtotechnicianlastname,assignedtotechnicianemailaddress,assignedtotechnicianphonenumber,creationdate,lastupdateddate,closeddate,resolution,attachments0filename,attachments0url,commentsnotes0author,commentsnotes0timestamp,commentsnotes0comment,relatedcustomercustomerid,relatedcustomerfirstname,relatedcustomerlastname,relatedcustomeremailaddress,relatedproductsservices0,relatedproductsservices1,customfieldscustomfield1,customfieldscustomfield2,referencesorderreference,referencestechnicianreference,audittrail0timestamp,audittrail0user,audittrail0changedescription,tagslabels0,tagslabels1,severity,duedate,location,clientinformationclientname,clientinformationclientcontact,clientinformationclientemail,clientinformationclientphone
+C1001,Hardware Malfunction,The hardware is showin...,In Progress,Medium,Hardware,456,Emily,Johnson,v_17zjyqf@icloud.com,2731700017,102,Emily,Johnson,w790isv3gzz@aol.com,1880713577,2023-12-20 10:20:00,2023-12-21 17:15:00,,Investigate the issue ...,hardware_issue.doc,https://example.com/ha...,Admin,2023-12-20 10:30:00,Hardware issue being d...,456,Emily,Johnson,gih5hig@outlook.com,Product Y,Service A,Issue_Type3,Issue_Type4,Order #445566,Technician #102,2023-12-20 11:00:00,Admin,Diagnosing the hardwar...,Tag3,Tag4,Medium,2023-12-25,"California, CA",XYZ Corp,Ben Parker,-dqjw2s@icloud.com,6043313136
+C1004,Security Vulnerability,Identified potential s...,In Progress,Low,Security,567,Oliver,Miller,lbt6v9b@outlook.com,6715130005,105,Oliver,Miller,13ezvb3zql@gmail.com,4204697950,2023-01-10 08:00:00,2023-01-11 15:45:00,,Investigate and mitiga...,security_patch.doc,https://example.com/se...,Admin,2023-01-10 08:15:00,Vulnerability assessme...,567,Oliver,Miller,d9_dvbvnhen@outlook.com,Product Y,Service A,Issue_Type9,Issue_Type10,Order #112299,Technician #105,2023-01-10 09:00:00,Admin,Addressing the securit...,Tag9,Tag10,Low,2023-01-15,"Washington, WA",XYZ Corp,Ben Parker,q8drc449-fz@aol.com,4386159126
+C1002,Network Connectivity Problem,The network connection...,Resolved,Low,Networking,789,Michael,Williams,qlj62d588s@yahoo.com,4346072809,103,Michael,Williams,18_sk-@protonmail.com,6120722028,2023-12-25 08:00:00,2023-12-26 15:45:00,2023-12-27 16:30:00,Resolved...,network_issue.txt,https://example.com/ne...,Admin,2023-12-25 08:15:00,Issue was related to a...,789,Michael,Williams,b6gvqf89_@gmail.com,Product Z,Service B,Issue_Type5,Issue_Type6,Order #667788,Technician #103,2023-12-25 09:00:00,Admin,Resolved the network i...,Tag5,Tag6,Low,2023-12-31,"Texas, TX",PQR Corp,Chris Evans,-i_iusna3g@icloud.com,4484512992
+C1003,Database Query Performance,Database queries are r...,In Progress,High,Database,234,Emma,Brown,20z84akhv-z@zoho.com,9299525742,104,Emma,Brown,f8c8ghxfh@gmail.com,4605223399,2023-12-30 10:20:00,2023-12-31 17:15:00,,Investigate and optimi...,query_performance.log,https://example.com/qu...,Admin,2023-12-30 10:30:00,Database queries under...,234,Emma,Brown,w9bzhseu@outlook.com,Product X,Service C,Issue_Type7,Issue_Type8,Order #998877,Technician #104,2023-12-30 11:00:00,Admin,Optimizing database qu...,Tag7,Tag8,High,2023-01-05,"Florida, FL",LMN Corp,Diana Prince,n9kwzdyf2j@icloud.com,9687463459
+C1000,Issue with Software Installation,The software installat...,In Progress,High,Software,123,John,Smith,j55nxaeu5j@yahoo.com,2984946141,101,John,Smith,aezz33wt1i-7@aol.com,6329848875,2023-12-15 08:00:00,2023-12-15 10:15:00,,Check the compatibilit...,software_failure.txt,https://example.com/so...,Admin,2023-12-15 08:30:00,Issue escalated to sen...,123,John,Smith,j2_z_f@outlook.com,Product A,Service X,Issue_Type1,Issue_Type2,Order #112233,Technician #101,2023-12-15 09:00:00,Admin,Working on resolving t...,Tag1,Tag2,High,2023-12-20,"In Progress York, NY",ABC Corp,Adam West,t1we8w@zoho.com,2606943882
+</dataframe>
+
+<conversation>
+User 1: What are the cases with status "Resolved"?_
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-11-06 12:45:04 [INFO] Code generated:
+```
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    # Filter cases with status "Resolved"
+    resolved_cases = dfs[0][dfs[0]['status'] == 'Resolved']
+    
+    # Return the filtered dataframe
+    return {"type": "dataframe", "value": resolved_cases}
+```
+
+2023-11-06 12:45:04 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    resolved_cases = dfs[0][dfs[0]['status'] == 'Resolved']
+    return {'type': 'dataframe', 'value': resolved_cases}
+        ```
+2023-11-06 12:45:04 [INFO] Answer: {'type': 'dataframe', 'value':     caseid                     casetitle  ... clientinformationclientemail clientinformationclientphone
+2    C1002  Network Connectivity Problem  ...            chris@pqrcorp.com                 555-876-5432
+6    C1006               Server Downtime  ...             adam@abccorp.com                 555-678-1234
+8    C1008                System Upgrade  ...            chris@pqrcorp.com                 555-876-5432
+9    C1010                Database Error  ...     susan@techinnovators.com                 555-987-6543
+11   C1012                  Software Bug  ...     susan@techinnovators.com                 555-987-6543
+..     ...                           ...  ...                          ...                          ...
+730   C891               Service Request  ...     susan@techinnovators.com                 555-987-6543
+732   C893                Software Issue  ...     susan@techinnovators.com                 555-987-6543
+734   C895                Hardware Issue  ...     susan@techinnovators.com                 555-987-6543
+736   C897               Data Loss Issue  ...       emma@techsolutions.com                 555-555-1234
+738   C899                Hardware Issue  ...     susan@techinnovators.com                 555-987-6543
+
+[429 rows x 47 columns]}
+2023-11-06 12:45:04 [INFO] Executed in: 5.974709749221802s
+2023-11-06 12:45:04 [INFO] 127.0.0.1 - - [06/Nov/2023 12:45:04] "GET /askme?prompt=What%20are%20the%20cases%20with%20status%20"Resolved"? HTTP/1.1" 200 -
+2023-11-06 12:46:07 [INFO] Question: What is the status of case C111?_
+2023-11-06 12:46:07 [INFO] Running PandasAI with azure-openai LLM...
+2023-11-06 12:46:07 [INFO] Prompt ID: 5fd7331c-5a43-4bb0-b999-1ec921eca84c
+2023-11-06 12:46:07 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 800 rows and 47 columns.
+This is the metadata of the dataframe dfs[0]:
+caseid,casetitle,description,status,priority,categorytype,reportedbycustomercustomerid,reportedbycustomerfirstname,reportedbycustomerlastname,reportedbycustomeremailaddress,reportedbycustomerphonenumber,assignedtotechniciantechnicianid,assignedtotechnicianfirstname,assignedtotechnicianlastname,assignedtotechnicianemailaddress,assignedtotechnicianphonenumber,creationdate,lastupdateddate,closeddate,resolution,attachments0filename,attachments0url,commentsnotes0author,commentsnotes0timestamp,commentsnotes0comment,relatedcustomercustomerid,relatedcustomerfirstname,relatedcustomerlastname,relatedcustomeremailaddress,relatedproductsservices0,relatedproductsservices1,customfieldscustomfield1,customfieldscustomfield2,referencesorderreference,referencestechnicianreference,audittrail0timestamp,audittrail0user,audittrail0changedescription,tagslabels0,tagslabels1,severity,duedate,location,clientinformationclientname,clientinformationclientcontact,clientinformationclientemail,clientinformationclientphone
+C1001,Hardware Malfunction,The hardware is showin...,In Progress,Medium,Hardware,456,Emily,Johnson,v_17zjyqf@icloud.com,2731700017,102,Emily,Johnson,w790isv3gzz@aol.com,1880713577,2023-12-20 10:20:00,2023-12-21 17:15:00,,Investigate the issue ...,hardware_issue.doc,https://example.com/ha...,Admin,2023-12-20 10:30:00,Hardware issue being d...,456,Emily,Johnson,gih5hig@outlook.com,Product Y,Service A,Issue_Type3,Issue_Type4,Order #445566,Technician #102,2023-12-20 11:00:00,Admin,Diagnosing the hardwar...,Tag3,Tag4,Medium,2023-12-25,"California, CA",XYZ Corp,Ben Parker,-dqjw2s@icloud.com,6043313136
+C1004,Security Vulnerability,Identified potential s...,In Progress,Low,Security,567,Oliver,Miller,lbt6v9b@outlook.com,6715130005,105,Oliver,Miller,13ezvb3zql@gmail.com,4204697950,2023-01-10 08:00:00,2023-01-11 15:45:00,,Investigate and mitiga...,security_patch.doc,https://example.com/se...,Admin,2023-01-10 08:15:00,Vulnerability assessme...,567,Oliver,Miller,d9_dvbvnhen@outlook.com,Product Y,Service A,Issue_Type9,Issue_Type10,Order #112299,Technician #105,2023-01-10 09:00:00,Admin,Addressing the securit...,Tag9,Tag10,Low,2023-01-15,"Washington, WA",XYZ Corp,Ben Parker,q8drc449-fz@aol.com,4386159126
+C1002,Network Connectivity Problem,The network connection...,Resolved,Low,Networking,789,Michael,Williams,qlj62d588s@yahoo.com,4346072809,103,Michael,Williams,18_sk-@protonmail.com,6120722028,2023-12-25 08:00:00,2023-12-26 15:45:00,2023-12-27 16:30:00,Resolved...,network_issue.txt,https://example.com/ne...,Admin,2023-12-25 08:15:00,Issue was related to a...,789,Michael,Williams,b6gvqf89_@gmail.com,Product Z,Service B,Issue_Type5,Issue_Type6,Order #667788,Technician #103,2023-12-25 09:00:00,Admin,Resolved the network i...,Tag5,Tag6,Low,2023-12-31,"Texas, TX",PQR Corp,Chris Evans,-i_iusna3g@icloud.com,4484512992
+C1003,Database Query Performance,Database queries are r...,In Progress,High,Database,234,Emma,Brown,20z84akhv-z@zoho.com,9299525742,104,Emma,Brown,f8c8ghxfh@gmail.com,4605223399,2023-12-30 10:20:00,2023-12-31 17:15:00,,Investigate and optimi...,query_performance.log,https://example.com/qu...,Admin,2023-12-30 10:30:00,Database queries under...,234,Emma,Brown,w9bzhseu@outlook.com,Product X,Service C,Issue_Type7,Issue_Type8,Order #998877,Technician #104,2023-12-30 11:00:00,Admin,Optimizing database qu...,Tag7,Tag8,High,2023-01-05,"Florida, FL",LMN Corp,Diana Prince,n9kwzdyf2j@icloud.com,9687463459
+C1000,Issue with Software Installation,The software installat...,In Progress,High,Software,123,John,Smith,j55nxaeu5j@yahoo.com,2984946141,101,John,Smith,aezz33wt1i-7@aol.com,6329848875,2023-12-15 08:00:00,2023-12-15 10:15:00,,Check the compatibilit...,software_failure.txt,https://example.com/so...,Admin,2023-12-15 08:30:00,Issue escalated to sen...,123,John,Smith,j2_z_f@outlook.com,Product A,Service X,Issue_Type1,Issue_Type2,Order #112233,Technician #101,2023-12-15 09:00:00,Admin,Working on resolving t...,Tag1,Tag2,High,2023-12-20,"In Progress York, NY",ABC Corp,Adam West,t1we8w@zoho.com,2606943882
+</dataframe>
+
+<conversation>
+User 1: What is the status of case C111?_
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-11-06 12:46:14 [INFO] Code generated:
+```
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    # Extract the relevant dataframe from dfs[0]
+    df = dfs[0]
+    
+    # Check if the case C111 exists in the dataframe
+    if 'C111' in df['caseid'].values:
+        # Get the status of case C111
+        status = df.loc[df['caseid'] == 'C111', 'status'].values[0]
+        
+        # Return the status as a string
+        return {"type": "string", "value": f"The status of case C111 is {status}."}
+    else:
+        # Return a message indicating that the case does not exist
+        return {"type": "string", "value": "Case C111 does not exist."}
+```
+
+2023-11-06 12:46:14 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    df = dfs[0]
+    if 'C111' in df['caseid'].values:
+        status = df.loc[df['caseid'] == 'C111', 'status'].values[0]
+        return {'type': 'string', 'value': f'The status of case C111 is {status}.'}
+    else:
+        return {'type': 'string', 'value': 'Case C111 does not exist.'}
+        ```
+2023-11-06 12:46:14 [INFO] Answer: {'type': 'string', 'value': 'The status of case C111 is In Progress.'}
+2023-11-06 12:46:14 [INFO] Executed in: 7.191076278686523s
+2023-11-06 12:46:14 [INFO] 127.0.0.1 - - [06/Nov/2023 12:46:14] "GET /askme?prompt=What%20is%20the%20status%20of%20case%20C111? HTTP/1.1" 200 -
+2023-11-06 12:50:35 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2023-11-06 12:50:35 [INFO] [33mPress CTRL+C to quit[0m
