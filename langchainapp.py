@@ -75,6 +75,40 @@ def airline_chat(text):
     # else:
     return result
 
+
+
+def technician_chat(text):
+    airline_template = ("""
+            You are a SQL Analyst that is querying a database  .
+            
+           
+            
+            Your job is to answer the following questions:
+            {query}
+                        
+            The output should only only be in string format
+            """)
+    
+    uri = "clickhouse://default:Neha@12345@20.213.35.159:8123/default"
+           
+    # clickhouse_uri = "clickhouse://<username>:<password>@<host>:<port>/<database>"
+
+    db = SQLDatabase.from_uri(uri)
+    # ,include_tables=['profile']
+
+    toolkit = SQLDatabaseToolkit(db=db, llm=llm)
+
+    result = final_output(toolkit,airline_template,text)
+
+    # if "don't" in result and "know" in result:
+    #     res = llm([HumanMessage(content=text)])
+    #     res = str(res)
+    #     res = res[9:-2]
+    #     print(res)
+    #     return res
+    # else:
+    return result
+
     
 
 
