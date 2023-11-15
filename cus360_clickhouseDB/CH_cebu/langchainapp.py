@@ -88,6 +88,10 @@ def sales_chat(text):
                       The column name description with the data type object contains description of the case
                       
                       ... (Continue with the rest of the column descriptions)
+
+                      Important note : If the questions are not related to the database simply return "Please ask questions about the database"
+                        
+                      Important note : If the questions are not related to the database simply return "Please ask questions about the database"
                       
                       Your job is to answer the following questions:
                       
