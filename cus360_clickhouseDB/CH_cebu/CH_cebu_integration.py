@@ -37,16 +37,22 @@ db_passenger = SQLDatabase.from_uri(uri_passenger)
 toolkit_passenger = SQLDatabaseToolkit(db=db_passenger, llm=llm)
 
 # Prompt template for both databases
-template = """
-    You are a SQL Analyst querying databases. Below is a description of the columns:
+template_clickhouse = """
+    You are a SQL Analyst querying a ClickHouse database. Below is a description of the columns:
 
-    For ClickHouse:
     The column name caseid with the data type object contains the ID of the case
     The column name casetitle with the data type object contains the title of the case
     The column name description with the data type object contains the description of the case
     ... (Continue with the rest of the ClickHouse column descriptions)
 
-    For Passenger Database:
+    Your job is to answer the following questions:
+    {query}
+"""
+
+# Template for Passenger Database
+template_passenger = """
+    You are a SQL Analyst querying a Passenger Database. Below is a description of the columns:
+
     The column name Passenger_name with the data type object contains the names of the passengers
     The column name Arrival_station with the data type object contains the arrival station of the passenger
     The column name Departure_station with the data type object contains the departure station of the passenger
@@ -56,6 +62,7 @@ template = """
     {query}
 """
 
+# Create agents for both databases
 agent_clickhouse = create_sql_agent(
     llm,
     toolkit=toolkit_clickhouse,
@@ -71,9 +78,9 @@ agent_passenger = create_sql_agent(
 )
 
 def get_response_clickhouse(query):
-    response_clickhouse = agent_clickhouse.run(template.format(query=query))
+    response_clickhouse = agent_clickhouse.run(template_clickhouse.format(query=query))
     return response_clickhouse
 
 def get_response_passenger(query):
-    response_passenger = agent_passenger.run(template.format(query=query))
+    response_passenger = agent_passenger.run(template_passenger.format(query=query))
     return response_passenger
