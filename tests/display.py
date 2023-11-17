@@ -2,7 +2,7 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output, State
-import pandasai
+import pandasaiapp
 
 app = dash.Dash(__name__)
 
@@ -23,7 +23,7 @@ def update_output_div(n_clicks, input_string):
         if input_string:
             return html.Div([
                 html.H3("Here's what I found : "),
-                html.Div(pandasai.get_response(input_string))
+                html.Div(pandasaiapp.get_response(input_string))
             ])
     return None
 

@@ -29,8 +29,7 @@ sdf = SmartDataframe(df, config={
 
     
     
-def predict(text):
-    check = sdf.chat(text[4:]+",give the points for x axis and y axis ")
-    return check
+
+check = sdf.chat(" x axis months , y-axis meals . now plot the best meals consumed for each month in 2023")
         
         

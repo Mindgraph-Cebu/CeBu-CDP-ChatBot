@@ -3,7 +3,6 @@ from flask import Flask, Response, jsonify, request
 import pandas as pd
 from flask_cors import CORS
 import json
-from new import predict
 
 app = Flask(__name__)
 
@@ -16,11 +15,10 @@ def get_airline_response():
     
         prompt = request.args.get("data")
         data = {}
-        if "predict" in prompt or "plot" in prompt:
-            data["answer"] = predict(prompt)   
-        else:
-            data["answer"] = airline_chat(prompt)   
-        # print(data) 
+          
+        
+        data["answer"] = airline_chat(prompt)   
+        
         
         return jsonify(data)
     
@@ -35,11 +33,10 @@ def get_technician_response():
     
         prompt = request.args.get("data")
         data = {}
-        if "predict" in prompt or "plot" in prompt:
-            data["answer"] = predict(prompt)   
-        else:
-            data["answer"] = technician_chat(prompt)   
-        # print(data) 
+          
+        
+        data["answer"] = technician_chat(prompt)   
+         
         
         return jsonify(data)
     
