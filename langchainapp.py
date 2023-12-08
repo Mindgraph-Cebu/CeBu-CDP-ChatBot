@@ -12,7 +12,7 @@ from langchain.schema import HumanMessage
 
 llm = AzureChatOpenAI(model="gpt-35-turbo",
                       openai_api_key="2dd4400d079a4fd49ddd2e864802522a",
-                      openai_api_base="https://genai-interns.openai.azure.com/",
+                      azure_endpoint="https://genai-interns.openai.azure.com/",
                       deployment_name="genai",
                       openai_api_version="2023-07-01-preview",
                       temperature=0.7)
