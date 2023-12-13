@@ -1,4 +1,4 @@
-from langchainapp import airline_chat,technician_chat
+from langchainapp import airline_chat
 from flask import Flask, Response, jsonify, request
 import pandas as pd
 from flask_cors import CORS
@@ -23,25 +23,25 @@ def get_airline_response():
         return jsonify(data)
     
     except ValueError:
-        return jsonify({'answer':"Please ask questions about the database"})
+        return jsonify({'answer':"I'm sorry, but I'm having difficulty understanding your query. Please ensure your question is related to the database."})
     
 
-@app.route('/askme/technician', methods = ['GET'])
-def get_technician_response():
+# @app.route('/askme/technician', methods = ['GET'])
+# def get_technician_response():
 
-    try:
+#     try:
     
-        prompt = request.args.get("data")
-        data = {}
+#         prompt = request.args.get("data")
+#         data = {}
           
         
-        data["answer"] = technician_chat(prompt)   
+#         data["answer"] = technician_chat(prompt)   
          
         
-        return jsonify(data)
+#         return jsonify(data)
     
-    except ValueError:
-        return jsonify({'answer':"Please ask questions about the database"})
+#     except ValueError:
+#         return jsonify({'answer':"Please ask questions about the database"})
     
 
 
